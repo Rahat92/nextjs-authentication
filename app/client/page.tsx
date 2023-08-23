@@ -5,11 +5,13 @@ import { notFound, redirect } from "next/navigation";
 import AuthProvider from "../context/AuthProvider";
 
 const Client = () => {
-    notFound()
-    // const {data:session, status} = useSession();
-    return <section>
+  notFound();
+  // const {data:session, status} = useSession();
+  return (
+    <section>
       <AuthProvider>helo</AuthProvider>
-  </section>;
+    </section>
+  );
 };
 
 export default Client;
